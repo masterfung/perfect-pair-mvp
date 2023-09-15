@@ -7,6 +7,7 @@ from modules.history import ChatHistory
 from modules.layout import Layout
 from modules.utils import Utilities
 from modules.sidebar import Sidebar
+from dotenv import load_dotenv
 
 #To be able to update the changes made to modules in localhost (press r)
 def reload_module(module_name):
@@ -26,7 +27,7 @@ Layout = layout_module.Layout
 Utilities = utils_module.Utilities
 Sidebar = sidebar_module.Sidebar
 
-st.set_page_config(layout="wide", page_icon="💬", page_title="Robby | Chat-Bot 🤖")
+st.set_page_config(layout="wide", page_icon="💬", page_title="Perfect Pair | Bottle Insight 🤖")
 
 # Instantiate the main components
 layout, sidebar, utils = Layout(), Sidebar(), Utilities()

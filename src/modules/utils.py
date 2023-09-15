@@ -5,6 +5,7 @@ import pdfplumber
 
 from modules.chatbot import Chatbot
 from modules.embedder import Embedder
+from dotenv import load_dotenv
 
 class Utilities:
 
@@ -14,6 +15,7 @@ class Utilities:
         Loads the OpenAI API key from the .env file or 
         from the user's input and returns it
         """
+        load_dotenv()
         if not hasattr(st.session_state, "api_key"):
             st.session_state.api_key = None
         #you can define your API key in .env directly
